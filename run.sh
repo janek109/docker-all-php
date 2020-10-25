@@ -1,3 +1,5 @@
+echo "install commands containers with php54, php55, php56, php70, php71, php72, php73, php74"
+
 docker run --publish 9054:9000 -detach -v `pwd`:/var/www/html --name php54 php:5.4-fpm
 docker run --publish 9055:9000 -detach -v `pwd`:/var/www/html --name php55 php:5.5-fpm
 docker run --publish 9056:9000 -detach -v `pwd`:/var/www/html --name php56 php:5.6.40-fpm
